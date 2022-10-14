@@ -1,0 +1,42 @@
+###
+### A complete description of a Prefect Deployment for flow 'alpha-vantage-etl'
+###
+name: alpha_vantage_etl
+description: null
+version: d50813266091050c7f44c340169129fd
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {}
+schedule: null
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: alpha-vantage-etl
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  _block_document_id: 35752b73-5768-484c-8319-35019fa693b7
+  _block_document_name: anonymous-9108ecb7-c157-4547-bd18-6befb8a68acd
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /workspaces/prefect-training
+entrypoint: src/alpha_vantage_flow.py:alpha_vantage_etl
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    symbols:
+      title: symbols
+      default: []
+  required: null
+  definitions: null
