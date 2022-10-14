@@ -1,5 +1,6 @@
 from prefect import flow, task, get_run_logger
 from prefect.task_runners import SequentialTaskRunner
+import yfinance as yf
 
 @task
 def log_something():
